@@ -1,0 +1,235 @@
+page-home {
+svg
+{
+  position:absolute;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  margin:auto;
+ max-width:300px;
+  padding:0px;
+}
+
+#background,.letter
+{
+   animation: background-animation 20s infinite ease-in-out;
+  transform-origin:50% 50%;
+  opacity:1;
+}
+
+@keyframes background-animation
+{
+  0%
+  {
+    
+  }
+  55%
+  {
+    transform:scale(1,1);
+  }
+  58%
+  {
+    transform:scale(1.1,1.1);
+    opacity:1;
+  }
+  62%
+  {
+    transform:scale(0,0);
+      opacity:0;
+  }
+  100%
+  {
+    transform:scale(0,0);
+      opacity:0;
+  }
+}
+
+.letter
+{
+  animation: letter-animation 20s infinite ease-in-out;
+}
+
+@keyframes letter-animation
+{
+  0%
+  {
+    
+  }
+  55%
+  {
+    fill:#ffffff;
+  }
+  63%
+  {
+      fill:transparent;
+  }
+  70%
+  {
+      fill:transparent;
+  }
+}
+
+
+circle
+{
+  stroke-dasharray: 3023;
+  stroke-dashoffset: -3023;
+  animation: circle-animation 20s infinite ease-in-out;
+  -ms-transform: scale(6, 3); /* IE 9 */
+  -webkit-transform: scale(6, 3); /* Safari */
+  transform: scale(6, 3);
+  transform-origin:50% 50%;
+}
+
+@keyframes circle-animation
+{
+  0%
+  {
+    -ms-transform: scale(0, 0); /* IE 9 */
+    -webkit-transform: scale(0, 0); /* Safari */
+    transform: scale(0, 0);
+  }
+  35%
+  {
+    -ms-transform: scale(0, 0); /* IE 9 */
+    -webkit-transform: scale(0, 0); /* Safari */
+    transform: scale(0, 0);
+  }
+  50%
+  {
+    -ms-transform: scale(7, 3); /* IE 9 */
+    -webkit-transform: scale(7, 3); /* Safari */
+    transform: scale(7, 3);
+  }
+  
+}
+ #hexagon-1
+{
+  animation: draw-hexagon-1 20s 0s infinite forwards linear;
+  transform-origin:50% 50%;
+}
+#hexagon-2
+{
+  animation: draw-hexagon-2 20s 0s infinite forwards linear;
+  transform-origin:50% 50%;
+}
+
+@keyframes draw-hexagon-1
+{
+  // Round 1
+  0%
+  {
+    stroke: #F16E18;
+    stroke-dasharray: 200, 3297;
+    stroke-dashoffset: -3297;
+ 
+  }
+  10% {
+     stroke: #F16E18;
+      stroke-dasharray: 200, 3297;
+      stroke-dashoffset: 200;
+  }
+  // round end
+  10.1%
+  {
+    stroke: transparent;
+  }
+  17.5%
+  {
+    stroke: transparent;
+  }
+  // round two
+  17.6%
+  {
+    stroke: #F16E18;
+    stroke-dasharray: 600, 3297;
+    stroke-dashoffset: -3297;
+  }
+  27%
+  {
+    stroke: #F16E18;
+      stroke-dasharray: 600, 3297;
+      stroke-dashoffset: 600;
+  }
+  27.1%
+  {
+    
+    stroke: transparent;
+  }
+  33.4%
+  {
+    stroke: transparent;
+  }
+  33.5%
+  {
+    stroke: #F16E18;
+    stroke-dasharray: 1000, 3297;
+    stroke-dashoffset: -3297;
+  }
+  40%
+  {
+    stroke: #F16E18;
+    stroke-dasharray: 3297;
+    stroke-dashoffset: 0;
+  }
+  60%
+  {
+    stroke: transparent;
+  }
+  
+  100% {
+    stroke: transparent;
+  }
+}
+@keyframes draw-hexagon-2
+{
+  0%
+  {
+     stroke: transparent;
+  }
+  8.9%
+  {
+     stroke: transparent;
+  }
+  9%
+  {
+    stroke: #F16E18;
+    stroke-dasharray: 400, 3297;
+    stroke-dashoffset: -3297;
+ 
+  }
+  19% {
+    stroke: #F16E18;
+    stroke-dasharray: 400, 3297;
+    stroke-dashoffset: 400;
+  }
+  19.1%
+  {
+     stroke: transparent;
+  }
+  25%
+  {
+    stroke: transparent;
+  }
+  25.1%
+  {
+    stroke: #F16E18;
+    stroke-dasharray: 800, 3297;
+    stroke-dashoffset: -3297;
+  }
+  36%
+  {
+     stroke: #F16E18;
+     stroke-dasharray: 800, 3297;
+      stroke-dashoffset: 800;
+  }
+  36.1%
+  {
+    stroke:transparent;
+  }
+  100% {
+       stroke: transparent;
+  }
+}
+}
